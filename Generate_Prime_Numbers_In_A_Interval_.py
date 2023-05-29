@@ -1,10 +1,9 @@
 def prime(n):
-    t = 0
+    cnt = 0
     for i in range(2,n//2+1):
         if n%i==0:
-            t = 1
-            break
-    if t==0:
+            cnt+=1
+    if cnt==0:
         return 1
     else:
         return 0
@@ -15,4 +14,3 @@ for i in range(a,b+1):
         continue
     if prime(i):
         print(i)
-    
